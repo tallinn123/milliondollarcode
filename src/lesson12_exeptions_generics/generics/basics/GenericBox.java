@@ -1,6 +1,6 @@
 package lesson12_exeptions_generics.generics.basics;
 
-public class GenericBox<T> {
+public class GenericBox<T> {    // T is an object
 
     T item;
     public GenericBox(T item){

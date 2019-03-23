@@ -2,10 +2,11 @@ package past_recaps;  // if-else
 
 import java.util.Scanner;
 
-public class PastRecap {
+public class PastRecap1_Scanner_IfElse {
 
     public static void main(String[] args) {
         System.out.println(" Welcome stranger. Please enter your full name");
+
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
 

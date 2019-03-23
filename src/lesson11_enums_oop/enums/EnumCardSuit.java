@@ -10,19 +10,15 @@ To define an enum, you use the enum keyword
 values enclosed in brackets:
 * */
 
-public class EnumTest
-{
+public class EnumCardSuit {
+
+    public enum CardSuit {HEARTS, SPADES, CLUBS, DIAMONDS}
 
     public static void main(String[] args)
     {
-        System.out.println(LengthUnit.CENTIMETER.getValue());
-        System.out.println(WeatherType.RAINY);
-
-        LengthUnit[] lengthUnits = LengthUnit.values();
-        for (LengthUnit lengthUnit : lengthUnits)
-        {
-
-            System.out.println(lengthUnit);
-        }
+        CardSuit suit; // You can declare variables using the enum’s name as the data type
+        suit = CardSuit.HEARTS; // Then, you can assign a value by using the enum name followed
+                                // by a period and any of the enum values.
+        System.out.println("The suit is " + suit);
     }
 }
